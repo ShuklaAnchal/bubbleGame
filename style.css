@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(#45A3D9, #349AD5,#CCE6F5);
+}
+#panel{
+    height: 80%;
+    width: 80%;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+#ptop{
+    height: 60px;
+    width: 100%;
+    background-color: #77BCE4;
+    display: flex;
+    text-align: center;
+justify-content: center;
+gap: 60px;
+}
+.elm{
+   display: flex;
+   justify-content: space-between;
+   gap: 5px;
+   padding: 10px 0;
+}
+.elm h2{
+    font-size: 20px;
+    padding:5px 0;
+   color: #fff;
+   font-weight: 100;
+}
+.box{
+    padding: 5px 20px;
+    height: 80%;
+    background-color: #fff;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #2684BA;
+}
+#pbottom{
+    height: calc(100% - 60px);
+    width: 100%;
+    padding: 13px 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.bubble{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 45px;
+    width: 45px;
+    background-color: #5c8ca8;
+    border-radius: 50%;
+    font-weight: 700;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+.bubble:hover{
+   background-color: #144866;
+}
+.close{
+    text-align: center;
+    line-height: 50px;
+}
+.close h1{
+    font-size: 50px;
+}
+.close a{
+    text-decoration: none;
+    font-size: 20px;
+}
+
+@media (max-width:600px) {
+    #ptop{
+        height: 60px;
+        width: 100%;
+        background-color: #77BCE4;
+        display: flex;
+        text-align: center;
+    justify-content: center;
+    gap: 20px;
+    }
+    .elm{
+        display: flex;
+        justify-content: space-between;
+        gap: 5px;
+        padding: 10px 0;
+     }
+     .elm h2{
+         font-size: 20px;
+         padding:5px 0;
+        color: #fff;
+        font-weight: 100;
+     }
+     .box{
+         padding: 5px 10px;
+         height: 80%;
+         background-color: #fff;
+         border-radius: 5px;
+         font-weight: 600;
+         font-size: 20px;
+         color: #2684BA;
+     }
+     #pbottom{
+        height: calc(100% - 60px);
+        width: 100%;
+        padding: 16px 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+}
